@@ -2,21 +2,18 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <QDebug>
 
-#include <QMenuBar> // 菜单栏
-#include <QMenu>
-#include <QAction>
+#include <QMenuBar>  // 菜单栏
+#include <QToolBar>  // 工具栏
+#include <QStatusBar>  // 状态栏
+#include <QDockWidget>  // 浮动窗口
 
-#include <QToolBar> // 工具栏
 
-#include <QStatusBar> //状态栏
-
-#include <QDockWidget> //浮动窗口
-
-#include <QPushButton>
-#include <QLabel>
+#include <QPushButton> // 按钮
+#include <QLabel>  // 标签
 #include <QTextEdit>
+
+
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
@@ -24,7 +21,6 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-
 
 };
 #endif // MAINWINDOW_H

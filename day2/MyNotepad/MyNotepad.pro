@@ -1,6 +1,5 @@
-QT       += core gui # //包含的模块
+QT       += core gui printsupport
 
-# 大于Qt4版本 才包含widget模块
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 CONFIG += c++17
@@ -9,16 +8,12 @@ CONFIG += c++17
 # In order to do so, uncomment the following line.
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
-# 源文件
 SOURCES += \
     main.cpp \
-    mypushbutton.cpp \
-    mywidget.cpp
+    mainwindow.cpp
 
-# 头文件
 HEADERS += \
-    mypushbutton.h \
-    mywidget.h
+    mainwindow.h
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

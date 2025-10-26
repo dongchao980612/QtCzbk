@@ -4,16 +4,15 @@
 #include <QPushButton>
 #include <QDebug>
 
-
-class MyPushButton : public QPushButton
+class MyPushbutton : public QPushButton
 {
     Q_OBJECT
 public:
-    explicit MyPushButton(QPushButton *parent = nullptr);
-    ~MyPushButton();
+    explicit MyPushbutton(QPushButton *parent = nullptr);
+
+    ~MyPushbutton();
 
 signals:
-
 };
 
 #endif // MYPUSHBUTTON_H

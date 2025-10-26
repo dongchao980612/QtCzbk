@@ -1,12 +1,17 @@
 #include "mypushbutton.h"
 
-MyPushButton::MyPushButton(QPushButton *parent) : QPushButton(parent)
+MyPushbutton::MyPushbutton(QPushButton *parent)
+    : QPushButton{parent}
 {
-    qDebug() << "我的按钮类构造调用";
+    qDebug()<<"MyPushbutton的构造函数";
 }
 
 
-MyPushButton::~MyPushButton()
+
+
+MyPushbutton::~MyPushbutton()
 {
-    qDebug() << "我的按钮类析构";
+    qDebug()<<"MyPushbutton的析构函数";
 }
+
+

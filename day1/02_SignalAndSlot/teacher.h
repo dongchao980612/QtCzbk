@@ -8,12 +8,15 @@ class Teacher : public QObject
     Q_OBJECT
 public:
     explicit Teacher(QObject *parent = nullptr);
-
 signals:
-    // 自定义信号
+    // 自定义信号 写在signals下面
+    // 返回值是void,只需要声明,不需要实现(不用写cpp文件)
+    // 可以有参数,可以重载
     void hungry();
-    void hungry(QString foodName);
-
+    void hungry(QString sth);
 };
 
 #endif // TEACHER_H
+
+
+

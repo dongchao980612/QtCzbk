@@ -3,10 +3,11 @@
 
 #include <QMainWindow>
 
-QT_BEGIN_NAMESPACE
-namespace Ui { class MainWindow; }
-QT_END_NAMESPACE
-
+#include <QMenuBar>  // 菜单栏
+#include <QToolBar>  // 工具栏
+#include <QStatusBar>  // 状态栏
+#include <QDockWidget>  // 浮动窗口
+#include <QTextEdit>
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
@@ -14,8 +15,7 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+private slots:
 
-private:
-    Ui::MainWindow *ui;
 };
 #endif // MAINWINDOW_H
