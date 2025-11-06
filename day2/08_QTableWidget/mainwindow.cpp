@@ -33,13 +33,11 @@ MainWindow::MainWindow(QWidget *parent)
     for (int i = 0; i < R; ++i)
     {
         QString name = QString("姓名%1").arg(i + 1);
-
         QString gender = QRandomGenerator::global()->bounded(2) == 0 ? "男" : "女";
         int age = QRandomGenerator::global()->bounded(min, max + 1);
 
         studentList.append(Student(name, gender, age));
     }
-
 
     for(int row = 0; row < studentList.size(); row++)
     {
